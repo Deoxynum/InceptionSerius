@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="player_alpha_background">#2d2d2d</color>
+    <color name="black_background">#232323</color>
+    <color name="blacker_background">#101010</color>
+    <color name="slightly_less_white">#f0f0f0</color>
+    <color name="tile1">#4c0000</color>
+    <color name="tile2">#ff9999</color>
+    <color name="tile3">#330000</color>
+    <color name="tile4">#F0EFF4</color>
+    <color name="blacker_special">#7F101010</color>
+
+</resources>

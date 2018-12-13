@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/player_alpha_background"
+    tools:context=".Activity.PlayerActivityVersions.PlayerTrendActivity">
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/ypvwVideoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:elevation="6dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ypvwVideoPlayer"
+        >
+        <TextView
+            android:id="@+id/tvwTitlePAA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Whatever"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:background="@color/black_background"
+            android:textSize="25sp"
+            android:textColor="@color/slightly_less_white"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tvwTitlePAA">
+            <TextView
+                android:id="@+id/tvwDescriptionPAA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="Whatever"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/slightly_less_white"
+                />
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

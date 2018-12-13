@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:background="@android:color/black">
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/tbMainTitelBar"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tbMainTitelBar"
+        android:background="@color/blacker_special"
+        >
+        <RelativeLayout
+            android:id="@+id/rlDivisionSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_above="@id/rlDivisionMusic"
+            android:background="@color/tile1">
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="250dp"
+                android:layout_height="130dp"
+                android:layout_alignParentStart="true"
+                android:background="@color/blacker_background"
+                android:text="@string/svSearchTag"
+                android:textColor="@color/slightly_less_white"
+                android:textSize="17sp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlDivisionMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@color/tile2">
+
+            <Button
+                android:id="@+id/btnMusic"
+                android:layout_width="250dp"
+                android:layout_height="130dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/slightly_less_white"
+                android:text="@string/svMusicTag"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDivisionTrend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlDivisionMusic"
+            android:background="@color/tile3">
+            <Button
+                android:id="@+id/btnTrend"
+                android:layout_width="250dp"
+                android:layout_height="130dp"
+                android:layout_alignParentStart="true"
+                android:text="@string/svTrendTag"
+                android:textSize="17sp"
+                android:textColor="@color/slightly_less_white"
+                android:background="@android:color/black"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

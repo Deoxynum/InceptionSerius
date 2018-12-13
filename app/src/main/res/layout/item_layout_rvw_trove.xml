@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/black_background">
+    <ImageView
+        android:id="@+id/ivwImageThumbTF"
+        android:contentDescription="ThumbNail"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/tvwTitleTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/ivwImageThumbTF"
+        android:singleLine="true"
+        android:text="Video Title"
+        android:textColor="@color/slightly_less_white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvwViewDesTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvwTitleTF"
+        android:layout_toEndOf="@+id/ivwImageThumbTF"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:singleLine="true"
+        android:text="Video Description"
+        android:textColor="@color/slightly_less_white"
+        android:textSize="15sp" />
+</RelativeLayout>

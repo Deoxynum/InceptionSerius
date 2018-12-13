@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SearchActivity.SearchActivity">
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/tbSearchTitleBar"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tbSearchTitleBar">
+
+        <RelativeLayout
+            android:id="@+id/rlDivisionSearchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvwSearchTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/svSearchTag"
+                android:textSize="20sp"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/etUserInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvwSearchTitle"
+                android:layout_margin="5dp"
+                android:hint="Search for Music!"
+                />
+            <Button
+                android:id="@+id/btnSearchUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:layout_below="@id/etUserInput" />
+
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvwSearchedItemList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlDivisionSearchBox">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

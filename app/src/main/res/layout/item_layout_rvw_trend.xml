@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/black_background">
+    <ImageView
+        android:id="@+id/ivwImageThumbTA"
+        android:contentDescription="ThumbNail"
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:alpha="0.7"
+        android:scaleType="centerCrop"
+        android:background="@color/colorAccent"
+        />
+    <RelativeLayout
+        android:id="@+id/rlItemLayoutTA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tvwTitleTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:singleLine="true"
+            android:text="Video Title"
+            android:textColor="@color/slightly_less_white"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlDivDescriptionTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+
+            android:background="@color/blacker_special"
+            >
+            <TextView
+                android:id="@+id/tvwDescriptionTA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:textColor="@color/slightly_less_white"
+                android:padding="10dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rlItemLayoutTA"
+        android:background="@color/slightly_less_white"/>
+
+</RelativeLayout>
